@@ -33,3 +33,27 @@ Clear DVC Cache as well
 Get the data from the remote drive
 
 `dvc pull`
+
+Now we shall try to update the update the data set and restore the old version after pushing the new version to the remote folder
+
+`python get_data.py`
+
+Push the data to the remote site 
+
+`dvc add data/data.csv`
+
+`dvc push`
+
+Checkout the old version of the data set
+
+`git log --oneline`
+
+`git checkout HEAD^1 data/data.csv.dvc`
+
+`dvc checkout`
+
+Commit to git
+
+`git commit data/data.csv.dvc -m 'reverted to the old dataset`
+
+
