@@ -56,4 +56,3 @@ Commit to git
 
 `git commit data/data.csv.dvc -m 'reverted to the old dataset`
 
-
